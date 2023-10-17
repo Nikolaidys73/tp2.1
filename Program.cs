@@ -15,7 +15,7 @@ public class Vehicle
 }
 
 
-public class ParkingSystem
+public class ParkingSystem // creacion de lista de vehiculos en los lugares
 {
     private List<Vehicle> regularParking = new List<Vehicle>();
     private List<Vehicle> quantumParking = new List<Vehicle>();
@@ -75,7 +75,7 @@ public class ParkingSystem
         }
     }
 
-    public void RemoveVehicleByLicensePlate(string licensePlate)
+    public void RemoveVehicleByLicensePlate(string licensePlate)   // remover vehiculo por licencia
     {
         regularParking.RemoveAll(vehicle => vehicle.LicensePlate == licensePlate);
         quantumParking.RemoveAll(vehicle => vehicle.LicensePlate == licensePlate);
@@ -125,7 +125,7 @@ public void RemoveRandomVehicles()
     }
 }
 
-class Program
+class Program  // menu que muestra la consola
 {
     static void Main(string[] args)
     {
