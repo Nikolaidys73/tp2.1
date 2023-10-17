@@ -162,8 +162,6 @@ class Program
                     parkingSystem.RemoveVehicleByOwnerDNI(ownerDNI);
                     break;
                 case "5":
-                    Console.Write("Remover autos Random: ");
-                    int count = int.Parse(Console.ReadLine());
                     parkingSystem.RemoveRandomVehicles();
                     break;
                 case "6":
